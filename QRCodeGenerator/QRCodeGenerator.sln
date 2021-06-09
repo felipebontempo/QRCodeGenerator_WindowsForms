@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.31025.194
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QRCodeGenerator", "QRCodeGenerator.csproj", "{C40A34D1-CFC3-400B-B4D3-2B4DEA42AEE7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "..\Entities\Entities.csproj", "{4890374C-B34C-4E56-9DD3-063E73FB5575}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoQR.Net", "..\GoQR.Net\GoQR.Net.csproj", "{3496091F-2494-4EA0-9573-2672A316218E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{C40A34D1-CFC3-400B-B4D3-2B4DEA42AEE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C40A34D1-CFC3-400B-B4D3-2B4DEA42AEE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C40A34D1-CFC3-400B-B4D3-2B4DEA42AEE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4890374C-B34C-4E56-9DD3-063E73FB5575}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4890374C-B34C-4E56-9DD3-063E73FB5575}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4890374C-B34C-4E56-9DD3-063E73FB5575}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4890374C-B34C-4E56-9DD3-063E73FB5575}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3496091F-2494-4EA0-9573-2672A316218E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3496091F-2494-4EA0-9573-2672A316218E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3496091F-2494-4EA0-9573-2672A316218E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3496091F-2494-4EA0-9573-2672A316218E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
