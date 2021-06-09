@@ -16,5 +16,10 @@ namespace QRCodeGenerator
         {
             InitializeComponent();
         }
+
+        private void Btn_UrlType_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
