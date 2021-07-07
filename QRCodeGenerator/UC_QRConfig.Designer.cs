@@ -259,6 +259,7 @@ namespace QRCodeGenerator
             this.Controls.Add(this.Configuration);
             this.Name = "UC_QRConfig";
             this.Size = new System.Drawing.Size(523, 422);
+            this.Load += new System.EventHandler(this.UC_QRConfig_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
