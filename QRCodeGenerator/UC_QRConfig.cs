@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Entities.Configurations;
+using System;
 using System.Windows.Forms;
 
 namespace QRCodeGenerator
@@ -85,6 +79,20 @@ namespace QRCodeGenerator
             CMB_Margin.SelectedIndex = 1;
             CMB_QZone.SelectedIndex = 0;
             CMB_Format.SelectedIndex = 0;
+        }
+        public QRConfig GetConfig()
+        {
+            QRConfig config = new QRConfig();
+            config.Size = CMB_Size.SelectedItem.ToString();
+            config.CharsetSource = CMB_CharsetSource.SelectedItem.ToString();
+            config.CharsetTarget = CMB_CharsetTarget.SelectedItem.ToString();
+            config.ECC = CMB_ECC.SelectedItem.ToString()[0]; //a propriedade é do tipo char, e o ECC retorna string, para acessar um unico caractere seleciono como um array, que a conversão é feita sem problema.
+            config.Color = CMB_Color.SelectedItem.ToString();
+            config.BGColor = CMB_BGColor.SelectedItem.ToString();
+            config.Margin = Convert.ToInt32(CMB_Margin.SelectedItem.ToString()); //O comboBox retorna uma string, por isso preciso fazer uma conversão.
+            config.QZone = Convert.ToInt32(CMB_QZone.SelectedItem.ToString());
+            config.Format = CMB_Format.SelectedItem.ToString();
+            return config;
         }
     }
 }
