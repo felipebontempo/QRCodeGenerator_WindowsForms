@@ -45,11 +45,12 @@ namespace QRCodeGenerator
 
             //Color
             CMB_Color.Items.Clear();
-            CMB_Color.Items.Add("000000");
+            CMB_Color.Items.Add("000000"); //Preto
             CMB_Color.Items.Add("00FFFF");
 
             //BG Color
             CMB_BGColor.Items.Clear();
+            CMB_BGColor.Items.Add("FFFFFF"); //Branco
             CMB_BGColor.Items.Add("000000");
             CMB_BGColor.Items.Add("00FFFF");
 
@@ -69,6 +70,21 @@ namespace QRCodeGenerator
             CMB_Format.Items.Add("gif");
             CMB_Format.Items.Add("jpeg");
             CMB_Format.Items.Add("jpg");
+
+            SetDefaultOptions();
+        }
+        public void SetDefaultOptions()
+        {
+            //valor padrões que será carregado quando o sistema é iniciado, nos respesctivos comboboxs.
+            CMB_Size.SelectedIndex = 1;
+            CMB_CharsetSource.SelectedIndex = 1;
+            CMB_CharsetTarget.SelectedIndex = 1;
+            CMB_ECC.SelectedIndex = 0;
+            CMB_Color.SelectedIndex = 0;
+            CMB_BGColor.SelectedIndex = 0;
+            CMB_Margin.SelectedIndex = 1;
+            CMB_QZone.SelectedIndex = 0;
+            CMB_Format.SelectedIndex = 0;
         }
     }
 }
