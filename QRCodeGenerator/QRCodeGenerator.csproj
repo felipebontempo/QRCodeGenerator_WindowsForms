@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Frm_QRCode_URL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_QRCode_URL.Designer.cs">
+      <DependentUpon>Frm_QRCode_URL.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMDI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,9 @@
     <Compile Include="UC_QRConfig.Designer.cs">
       <DependentUpon>UC_QRConfig.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\Frm_QRCode_URL.resx">
+      <DependentUpon>Frm_QRCode_URL.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMDI.resx">
       <DependentUpon>FrmMDI.cs</DependentUpon>
     </EmbeddedResource>
