@@ -1,6 +1,6 @@
-﻿using Entities.Configurations;
-using System;
+﻿using System;
 using System.Windows.Forms;
+using Entities.Configurations;
 
 namespace QRCodeGenerator
 {
@@ -69,7 +69,7 @@ namespace QRCodeGenerator
         }
         public void SetDefaultOptions()
         {
-            //valor padrões que será carregado quando o sistema é iniciado, nos respesctivos comboboxs.
+            //valor padrões que será carregado quando o sistema é iniciado, nos respesctivos comboboxs.            
             CMB_Size.SelectedIndex = 1;
             CMB_CharsetSource.SelectedIndex = 1;
             CMB_CharsetTarget.SelectedIndex = 1;

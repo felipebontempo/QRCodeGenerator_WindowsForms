@@ -16,5 +16,23 @@ namespace QRCodeGenerator.Forms
         {
             InitializeComponent();
         }
+
+        private void Btn_Generate_QRCode_URL_01_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_GenerateClean_QRCode_URL_02_Click(object sender, EventArgs e)
+        {
+            Txt_URL.Text = string.Empty;
+            Pic_Image_QRCodeURL.BackgroundImage = null;
+            var F = new UC_QRConfig();
+            F.SetDefaultOptions();
+        }
+
+        private void Btn_GenerateSave_QRCode_URL_03_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
