@@ -243,6 +243,7 @@ namespace QRCodeGenerator
             this.Btn_RedefinirConfig.TabIndex = 19;
             this.Btn_RedefinirConfig.Text = "Redefinir para configuração padrão";
             this.Btn_RedefinirConfig.UseVisualStyleBackColor = true;
+            this.Btn_RedefinirConfig.Visible = false;
             this.Btn_RedefinirConfig.Click += new System.EventHandler(this.Btn_RedefinirConfig_Click);
             // 
             // UC_QRConfig

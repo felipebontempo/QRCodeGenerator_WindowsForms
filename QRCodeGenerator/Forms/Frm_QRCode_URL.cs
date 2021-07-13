@@ -16,8 +16,7 @@ namespace QRCodeGenerator.Forms
         private string _format;
         public Frm_QRCode_URL()
         {
-            InitializeComponent();
-            Btn_GenerateClean_QRCode_URL_02_Click(Btn_GenerateClean_QRCode_URL_02, new EventArgs());
+            InitializeComponent();            
         }
 
         private void Btn_Generate_QRCode_URL_01_Click(object sender, EventArgs e)
@@ -30,14 +29,18 @@ namespace QRCodeGenerator.Forms
             _format = string.Empty;
             _imgQrcode = null;
             Txt_URL.Text = string.Empty;
-            Pic_Image_QRCodeURL.BackgroundImage = null;
-            /*O botão Clean, para limpar formulário não funciona, porque estou tentando chamar uma função em um form User Control, não consegui fazer funcionar, por isso criei uma botão a parte.*/
-            //UC_QRConfig.SetDefaultOptions(); ta dando ruim
+            Pic_Image_QRCodeURL.BackgroundImage = null;            
+            uC_QRConfig1.SetDefaultOptions();
         }
 
         private void Btn_GenerateSave_QRCode_URL_03_Click(object sender, EventArgs e)
         {
             SaveImage.Save(_imgQrcode, _format);
+        }
+
+        private void Frm_QRCode_URL_Load(object sender, EventArgs e) //ação que executa depois do form pai ser carregado por completo.
+        {
+            Btn_GenerateClean_QRCode_URL_02_Click(Btn_GenerateClean_QRCode_URL_02, new EventArgs());
         }
     }
 }

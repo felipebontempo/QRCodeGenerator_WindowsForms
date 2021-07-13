@@ -123,7 +123,6 @@ namespace QRCodeGenerator.Forms
             this.Btn_GenerateClean_QRCode_URL_02.TabIndex = 9;
             this.Btn_GenerateClean_QRCode_URL_02.Text = "Clean";
             this.Btn_GenerateClean_QRCode_URL_02.UseVisualStyleBackColor = true;
-            this.Btn_GenerateClean_QRCode_URL_02.Visible = false;
             this.Btn_GenerateClean_QRCode_URL_02.Click += new System.EventHandler(this.Btn_GenerateClean_QRCode_URL_02_Click);
             // 
             // uC_QRConfig1
@@ -155,6 +154,7 @@ namespace QRCodeGenerator.Forms
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "QRCode URL";
+            this.Load += new System.EventHandler(this.Frm_QRCode_URL_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Image_QRCodeURL)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
