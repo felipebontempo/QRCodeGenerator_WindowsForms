@@ -48,6 +48,7 @@ namespace QRCodeGenerator
             this.label8 = new System.Windows.Forms.Label();
             this.CMB_Format = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.Btn_RedefinirConfig = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Configuration
@@ -233,11 +234,23 @@ namespace QRCodeGenerator
             this.label9.TabIndex = 17;
             this.label9.Text = "Format";
             // 
+            // Btn_RedefinirConfig
+            // 
+            this.Btn_RedefinirConfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_RedefinirConfig.Location = new System.Drawing.Point(282, 323);
+            this.Btn_RedefinirConfig.Name = "Btn_RedefinirConfig";
+            this.Btn_RedefinirConfig.Size = new System.Drawing.Size(217, 49);
+            this.Btn_RedefinirConfig.TabIndex = 19;
+            this.Btn_RedefinirConfig.Text = "Redefinir para configuração padrão";
+            this.Btn_RedefinirConfig.UseVisualStyleBackColor = true;
+            this.Btn_RedefinirConfig.Click += new System.EventHandler(this.Btn_RedefinirConfig_Click);
+            // 
             // UC_QRConfig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.Btn_RedefinirConfig);
             this.Controls.Add(this.CMB_Format);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.CMB_QZone);
@@ -286,5 +299,6 @@ namespace QRCodeGenerator
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox CMB_Format;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button Btn_RedefinirConfig;
     }
 }

@@ -37,7 +37,7 @@ namespace QRCodeGenerator.Forms
             this.Btn_Generate_QRCode_URL_01 = new System.Windows.Forms.Button();
             this.Btn_GenerateSave_QRCode_URL_03 = new System.Windows.Forms.Button();
             this.Btn_GenerateClean_QRCode_URL_02 = new System.Windows.Forms.Button();
-            this.Frm_QRConfig_UC_URL = new QRCodeGenerator.UC_QRConfig();
+            this.uC_QRConfig1 = new QRCodeGenerator.UC_QRConfig();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Image_QRCodeURL)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,9 +66,9 @@ namespace QRCodeGenerator.Forms
             // Txt_URL
             // 
             this.Txt_URL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_URL.Location = new System.Drawing.Point(13, 102);
+            this.Txt_URL.Location = new System.Drawing.Point(8, 102);
             this.Txt_URL.Name = "Txt_URL";
-            this.Txt_URL.Size = new System.Drawing.Size(518, 23);
+            this.Txt_URL.Size = new System.Drawing.Size(523, 23);
             this.Txt_URL.TabIndex = 4;
             // 
             // label2
@@ -123,21 +123,23 @@ namespace QRCodeGenerator.Forms
             this.Btn_GenerateClean_QRCode_URL_02.TabIndex = 9;
             this.Btn_GenerateClean_QRCode_URL_02.Text = "Clean";
             this.Btn_GenerateClean_QRCode_URL_02.UseVisualStyleBackColor = true;
+            this.Btn_GenerateClean_QRCode_URL_02.Visible = false;
             this.Btn_GenerateClean_QRCode_URL_02.Click += new System.EventHandler(this.Btn_GenerateClean_QRCode_URL_02_Click);
             // 
-            // Frm_QRConfig_UC_URL
+            // uC_QRConfig1
             // 
-            this.Frm_QRConfig_UC_URL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Frm_QRConfig_UC_URL.Location = new System.Drawing.Point(8, 139);
-            this.Frm_QRConfig_UC_URL.Name = "Frm_QRConfig_UC_URL";
-            this.Frm_QRConfig_UC_URL.Size = new System.Drawing.Size(523, 422);
-            this.Frm_QRConfig_UC_URL.TabIndex = 0;
+            this.uC_QRConfig1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.uC_QRConfig1.Location = new System.Drawing.Point(8, 131);
+            this.uC_QRConfig1.Name = "uC_QRConfig1";
+            this.uC_QRConfig1.Size = new System.Drawing.Size(523, 422);
+            this.uC_QRConfig1.TabIndex = 10;
             // 
             // Frm_QRCode_URL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 627);
+            this.Controls.Add(this.uC_QRConfig1);
             this.Controls.Add(this.Btn_GenerateClean_QRCode_URL_02);
             this.Controls.Add(this.Btn_GenerateSave_QRCode_URL_03);
             this.Controls.Add(this.Btn_Generate_QRCode_URL_01);
@@ -146,7 +148,6 @@ namespace QRCodeGenerator.Forms
             this.Controls.Add(this.Txt_URL);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Configuration);
-            this.Controls.Add(this.Frm_QRConfig_UC_URL);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Frm_QRCode_URL";
@@ -161,8 +162,6 @@ namespace QRCodeGenerator.Forms
         }
 
         #endregion
-
-        private UC_QRConfig Frm_QRConfig_UC_URL;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label Configuration;
         private System.Windows.Forms.TextBox Txt_URL;
@@ -171,5 +170,6 @@ namespace QRCodeGenerator.Forms
         private System.Windows.Forms.Button Btn_Generate_QRCode_URL_01;
         private System.Windows.Forms.Button Btn_GenerateSave_QRCode_URL_03;
         private System.Windows.Forms.Button Btn_GenerateClean_QRCode_URL_02;
+        private UC_QRConfig uC_QRConfig1;
     }
 }

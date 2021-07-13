@@ -26,8 +26,7 @@ namespace QRCodeGenerator.Forms
         {
             Txt_URL.Text = string.Empty;
             Pic_Image_QRCodeURL.BackgroundImage = null;
-            var F = new UC_QRConfig();
-            F.SetDefaultOptions();
+            /*O botão Clean, para limpar formulário não funciona, porque estou tentando chamar uma função em um form User Control, não consegui fazer funcionar, por isso criei uma botão a parte.*/          
         }
 
         private void Btn_GenerateSave_QRCode_URL_03_Click(object sender, EventArgs e)

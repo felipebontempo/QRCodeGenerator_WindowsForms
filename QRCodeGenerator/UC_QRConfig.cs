@@ -94,5 +94,18 @@ namespace QRCodeGenerator
             config.Format = CMB_Format.SelectedItem.ToString();
             return config;
         }
+
+        public void Btn_RedefinirConfig_Click(object sender, EventArgs e)
+        {
+            CMB_Size.SelectedIndex = 1;
+            CMB_CharsetSource.SelectedIndex = 1;
+            CMB_CharsetTarget.SelectedIndex = 1;
+            CMB_ECC.SelectedIndex = 0;
+            CMB_Color.SelectedIndex = 0;
+            CMB_BGColor.SelectedIndex = 0;
+            CMB_Margin.SelectedIndex = 1;
+            CMB_QZone.SelectedIndex = 0;
+            CMB_Format.SelectedIndex = 0;
+        }
     }
 }
