@@ -60,6 +60,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaveImage.cs" />
     <Compile Include="UC_QRConfig.cs">
       <SubType>UserControl</SubType>
     </Compile>
