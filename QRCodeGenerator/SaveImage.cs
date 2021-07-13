@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Windows.Forms;
 
 namespace QRCodeGenerator
@@ -36,7 +34,29 @@ namespace QRCodeGenerator
             sfDialog.Title = "Save QRCode"; //nome da janela
             sfDialog.FileName = "QRCode"; //nome padrão do arquivo
             sfDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop); //Ao abrir a janela a mesma será aberta por padrão no desktop do usuário.
-            sfDialog.ShowDialog(); //Exiba a janela!
+            
+            sfDialog.ShowDialog(); //Exiba a janela!, para aguardar o usuário escolher nome e diretorio onde vai salvar o arquivo.
+
+            //verifica se foi digitado um nome para o arquivo.
+            if (!sfDialog.FileName.Equals(string.Empty))//se diferente de vazio, entra no IF
+            {
+                FileStream fs = (FileStream)sfDialog.OpenFile();//pego a referencia do arquivo selecionado
+
+                if (format.Equals("png"))
+                {
+                    imgQRCode.Save(fs, ImageFormat.Png);
+                }
+                else if (format.Equals("gif"))
+                {
+                    imgQRCode.Save(fs, ImageFormat.Gif);
+                }                
+                else
+                {
+                    imgQRCode.Save(fs, ImageFormat.Jpeg);
+                }
+
+                fs.Close();
+            }
         }
     }
 }
