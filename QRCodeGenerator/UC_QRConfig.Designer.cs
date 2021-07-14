@@ -38,9 +38,7 @@ namespace QRCodeGenerator
             this.LBL_CharsetTarget = new System.Windows.Forms.Label();
             this.CMB_ECC = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.CMB_Color = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.CMB_BGColor = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.CMB_Margin = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -49,6 +47,8 @@ namespace QRCodeGenerator
             this.CMB_Format = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.Btn_RedefinirConfig = new System.Windows.Forms.Button();
+            this.Btn_BGColor = new System.Windows.Forms.Button();
+            this.Btn_ColorQrcode = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Configuration
@@ -139,15 +139,6 @@ namespace QRCodeGenerator
             this.label4.TabIndex = 7;
             this.label4.Text = "ECC:";
             // 
-            // CMB_Color
-            // 
-            this.CMB_Color.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CMB_Color.FormattingEnabled = true;
-            this.CMB_Color.Location = new System.Drawing.Point(27, 351);
-            this.CMB_Color.Name = "CMB_Color";
-            this.CMB_Color.Size = new System.Drawing.Size(217, 21);
-            this.CMB_Color.TabIndex = 10;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -157,15 +148,6 @@ namespace QRCodeGenerator
             this.label5.Size = new System.Drawing.Size(51, 20);
             this.label5.TabIndex = 9;
             this.label5.Text = "Color";
-            // 
-            // CMB_BGColor
-            // 
-            this.CMB_BGColor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CMB_BGColor.FormattingEnabled = true;
-            this.CMB_BGColor.Location = new System.Drawing.Point(282, 92);
-            this.CMB_BGColor.Name = "CMB_BGColor";
-            this.CMB_BGColor.Size = new System.Drawing.Size(217, 21);
-            this.CMB_BGColor.TabIndex = 12;
             // 
             // label6
             // 
@@ -246,11 +228,33 @@ namespace QRCodeGenerator
             this.Btn_RedefinirConfig.Visible = false;
             this.Btn_RedefinirConfig.Click += new System.EventHandler(this.Btn_RedefinirConfig_Click);
             // 
+            // Btn_BGColor
+            // 
+            this.Btn_BGColor.Location = new System.Drawing.Point(282, 92);
+            this.Btn_BGColor.Name = "Btn_BGColor";
+            this.Btn_BGColor.Size = new System.Drawing.Size(217, 23);
+            this.Btn_BGColor.TabIndex = 21;
+            this.Btn_BGColor.Text = "Cor de fundo";
+            this.Btn_BGColor.UseVisualStyleBackColor = true;
+            this.Btn_BGColor.Click += new System.EventHandler(this.Btn_BGColor_Click);
+            // 
+            // Btn_ColorQrcode
+            // 
+            this.Btn_ColorQrcode.Location = new System.Drawing.Point(27, 351);
+            this.Btn_ColorQrcode.Name = "Btn_ColorQrcode";
+            this.Btn_ColorQrcode.Size = new System.Drawing.Size(217, 23);
+            this.Btn_ColorQrcode.TabIndex = 22;
+            this.Btn_ColorQrcode.Text = "Cor do QR Code";
+            this.Btn_ColorQrcode.UseVisualStyleBackColor = true;
+            this.Btn_ColorQrcode.Click += new System.EventHandler(this.Btn_ColorQrcode_Click);
+            // 
             // UC_QRConfig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.Btn_ColorQrcode);
+            this.Controls.Add(this.Btn_BGColor);
             this.Controls.Add(this.Btn_RedefinirConfig);
             this.Controls.Add(this.CMB_Format);
             this.Controls.Add(this.label9);
@@ -258,9 +262,7 @@ namespace QRCodeGenerator
             this.Controls.Add(this.label8);
             this.Controls.Add(this.CMB_Margin);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.CMB_BGColor);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.CMB_Color);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.CMB_ECC);
             this.Controls.Add(this.label4);
@@ -290,9 +292,7 @@ namespace QRCodeGenerator
         private System.Windows.Forms.Label LBL_CharsetTarget;
         private System.Windows.Forms.ComboBox CMB_ECC;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox CMB_Color;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox CMB_BGColor;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox CMB_Margin;
         private System.Windows.Forms.Label label7;
@@ -301,5 +301,7 @@ namespace QRCodeGenerator
         private System.Windows.Forms.ComboBox CMB_Format;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button Btn_RedefinirConfig;
+        private System.Windows.Forms.Button Btn_BGColor;
+        private System.Windows.Forms.Button Btn_ColorQrcode;
     }
 }

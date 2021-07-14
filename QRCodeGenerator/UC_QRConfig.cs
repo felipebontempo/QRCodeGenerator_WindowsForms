@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Windows.Forms;
 using Entities.Configurations;
+using System.Drawing;
 
 namespace QRCodeGenerator
 {
     public partial class UC_QRConfig : UserControl
     {
+        string CorFundoQrCode = "";
+        string CorQrCode = "";
         public UC_QRConfig()
         {
             InitializeComponent();
@@ -38,15 +41,10 @@ namespace QRCodeGenerator
             CMB_ECC.Items.Add("H");
 
             //Color
-            CMB_Color.Items.Clear();
-            CMB_Color.Items.Add("000000"); //Preto
-            CMB_Color.Items.Add("00FFFF");
+            CorQrCode = "000000";
 
             //BG Color
-            CMB_BGColor.Items.Clear();
-            CMB_BGColor.Items.Add("FFFFFF"); //Branco
-            CMB_BGColor.Items.Add("000000");
-            CMB_BGColor.Items.Add("00FFFF");
+            CorFundoQrCode = "FFFFFF";
 
             //margin
             CMB_Margin.Items.Clear();
@@ -74,8 +72,6 @@ namespace QRCodeGenerator
             CMB_CharsetSource.SelectedIndex = 1;
             CMB_CharsetTarget.SelectedIndex = 1;
             CMB_ECC.SelectedIndex = 0;
-            CMB_Color.SelectedIndex = 0;
-            CMB_BGColor.SelectedIndex = 0;
             CMB_Margin.SelectedIndex = 1;
             CMB_QZone.SelectedIndex = 0;
             CMB_Format.SelectedIndex = 0;
@@ -87,8 +83,8 @@ namespace QRCodeGenerator
             config.CharsetSource = CMB_CharsetSource.SelectedItem.ToString();
             config.CharsetTarget = CMB_CharsetTarget.SelectedItem.ToString();
             config.ECC = CMB_ECC.SelectedItem.ToString()[0]; //a propriedade é do tipo char, e o ECC retorna string, para acessar um unico caractere seleciono como um array, que a conversão é feita sem problema.
-            config.Color = CMB_Color.SelectedItem.ToString();
-            config.BGColor = CMB_BGColor.SelectedItem.ToString();
+            config.Color = CorQrCode;
+            config.BGColor = CorFundoQrCode;//CMB_BGColor.SelectedItem.ToString();
             config.Margin = Convert.ToInt32(CMB_Margin.SelectedItem.ToString()); //O comboBox retorna uma string, por isso preciso fazer uma conversão.
             config.QZone = Convert.ToInt32(CMB_QZone.SelectedItem.ToString());
             config.Format = CMB_Format.SelectedItem.ToString();
@@ -101,11 +97,31 @@ namespace QRCodeGenerator
             CMB_CharsetSource.SelectedIndex = 1;
             CMB_CharsetTarget.SelectedIndex = 1;
             CMB_ECC.SelectedIndex = 0;
-            CMB_Color.SelectedIndex = 0;
-            CMB_BGColor.SelectedIndex = 0;
             CMB_Margin.SelectedIndex = 1;
             CMB_QZone.SelectedIndex = 0;
             CMB_Format.SelectedIndex = 0;
+        }        
+
+        private void Btn_BGColor_Click(object sender, EventArgs e)
+        {
+            ColorDialog CDb = new ColorDialog();
+            if (CDb.ShowDialog() == DialogResult.OK)
+            {                
+                Color myColor = CDb.Color;
+                string hex = myColor.R.ToString("X2") + myColor.G.ToString("X2") + myColor.B.ToString("X2");
+                CorFundoQrCode = hex;
+            }
+        }
+
+        private void Btn_ColorQrcode_Click(object sender, EventArgs e)
+        {
+            ColorDialog CDb = new ColorDialog();
+            if (CDb.ShowDialog() == DialogResult.OK)
+            {
+                Color myColor = CDb.Color;
+                string hex = myColor.R.ToString("X2") + myColor.G.ToString("X2") + myColor.B.ToString("X2");
+                CorQrCode = hex;
+            }
         }
     }
 }
