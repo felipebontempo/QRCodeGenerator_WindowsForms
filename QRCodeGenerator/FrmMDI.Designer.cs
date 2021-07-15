@@ -171,6 +171,7 @@ namespace QRCodeGenerator
             this.Btn_TextType.Size = new System.Drawing.Size(194, 48);
             this.Btn_TextType.TabIndex = 1;
             this.Btn_TextType.UseVisualStyleBackColor = true;
+            this.Btn_TextType.Click += new System.EventHandler(this.Btn_TextType_Click);
             // 
             // Btn_UrlType
             // 

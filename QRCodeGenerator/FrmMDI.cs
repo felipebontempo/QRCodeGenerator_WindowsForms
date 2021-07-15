@@ -31,5 +31,10 @@ namespace QRCodeGenerator
         {
             AbrirFormulario(new Frm_QRCode_URL());
         }
+
+        private void Btn_TextType_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new Frm_QRCode_Text());
+        }
     }
 }

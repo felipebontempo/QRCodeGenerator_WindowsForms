@@ -75,6 +75,12 @@ namespace QRCodeGenerator
             CMB_Margin.SelectedIndex = 1;
             CMB_QZone.SelectedIndex = 0;
             CMB_Format.SelectedIndex = 0;
+
+            //Color
+            CorQrCode = "000000";
+
+            //BG Color
+            CorFundoQrCode = "FFFFFF";
         }
         public QRConfig GetConfig()
         {
