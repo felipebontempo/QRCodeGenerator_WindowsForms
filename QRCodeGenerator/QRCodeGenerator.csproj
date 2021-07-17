@@ -58,6 +58,18 @@
     <Compile Include="Forms\Frm_QRCode_URL.Designer.cs">
       <DependentUpon>Frm_QRCode_URL.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Frm_QRCode_Vcard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_QRCode_Vcard.Designer.cs">
+      <DependentUpon>Frm_QRCode_Vcard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_VcardCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_VcardCadastro.Designer.cs">
+      <DependentUpon>Frm_VcardCadastro.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMDI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,11 +85,18 @@
     <Compile Include="UC_QRConfig.Designer.cs">
       <DependentUpon>UC_QRConfig.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vcard.cs" />
     <EmbeddedResource Include="Forms\Frm_QRCode_Text.resx">
       <DependentUpon>Frm_QRCode_Text.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Frm_QRCode_URL.resx">
       <DependentUpon>Frm_QRCode_URL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_QRCode_Vcard.resx">
+      <DependentUpon>Frm_QRCode_Vcard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_VcardCadastro.resx">
+      <DependentUpon>Frm_VcardCadastro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMDI.resx">
       <DependentUpon>FrmMDI.cs</DependentUpon>

@@ -160,6 +160,7 @@ namespace QRCodeGenerator
             this.Btn_vCardType.Size = new System.Drawing.Size(194, 48);
             this.Btn_vCardType.TabIndex = 2;
             this.Btn_vCardType.UseVisualStyleBackColor = true;
+            this.Btn_vCardType.Click += new System.EventHandler(this.Btn_vCardType_Click);
             // 
             // Btn_TextType
             // 
