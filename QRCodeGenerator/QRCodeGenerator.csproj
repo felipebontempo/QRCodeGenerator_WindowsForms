@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Frm_QRCode_Sms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_QRCode_Sms.Designer.cs">
+      <DependentUpon>Frm_QRCode_Sms.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Frm_QRCode_Text.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,12 @@
     </Compile>
     <Compile Include="Forms\Frm_QRCode_Vcard.Designer.cs">
       <DependentUpon>Frm_QRCode_Vcard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_SmsCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_SmsCadastro.Designer.cs">
+      <DependentUpon>Frm_SmsCadastro.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Frm_VcardCadastro.cs">
       <SubType>Form</SubType>
@@ -86,6 +98,9 @@
       <DependentUpon>UC_QRConfig.cs</DependentUpon>
     </Compile>
     <Compile Include="Vcard.cs" />
+    <EmbeddedResource Include="Forms\Frm_QRCode_Sms.resx">
+      <DependentUpon>Frm_QRCode_Sms.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Frm_QRCode_Text.resx">
       <DependentUpon>Frm_QRCode_Text.cs</DependentUpon>
     </EmbeddedResource>
@@ -94,6 +109,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Frm_QRCode_Vcard.resx">
       <DependentUpon>Frm_QRCode_Vcard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_SmsCadastro.resx">
+      <DependentUpon>Frm_SmsCadastro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Frm_VcardCadastro.resx">
       <DependentUpon>Frm_VcardCadastro.cs</DependentUpon>

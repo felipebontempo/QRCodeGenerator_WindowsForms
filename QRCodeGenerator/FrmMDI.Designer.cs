@@ -149,6 +149,7 @@ namespace QRCodeGenerator
             this.Btn_SMSType.Size = new System.Drawing.Size(194, 48);
             this.Btn_SMSType.TabIndex = 3;
             this.Btn_SMSType.UseVisualStyleBackColor = true;
+            this.Btn_SMSType.Click += new System.EventHandler(this.Btn_SMSType_Click);
             // 
             // Btn_vCardType
             // 

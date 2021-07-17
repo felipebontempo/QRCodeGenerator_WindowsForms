@@ -41,5 +41,10 @@ namespace QRCodeGenerator
         {
             AbrirFormulario(new Frm_QRCode_Vcard());
         }
+
+        private void Btn_SMSType_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new Frm_QRCode_Sms());
+        }
     }
 }
