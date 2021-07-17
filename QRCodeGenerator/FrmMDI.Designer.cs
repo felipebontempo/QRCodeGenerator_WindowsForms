@@ -138,6 +138,7 @@ namespace QRCodeGenerator
             this.Btn_CallType.Size = new System.Drawing.Size(194, 48);
             this.Btn_CallType.TabIndex = 4;
             this.Btn_CallType.UseVisualStyleBackColor = true;
+            this.Btn_CallType.Click += new System.EventHandler(this.Btn_CallType_Click);
             // 
             // Btn_SMSType
             // 
