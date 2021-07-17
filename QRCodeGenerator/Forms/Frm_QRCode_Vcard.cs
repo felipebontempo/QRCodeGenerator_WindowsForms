@@ -1,15 +1,8 @@
 ﻿using Entities.Configurations;
 using GoQR.Net;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
 using System.Drawing;
-using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace QRCodeGenerator.Forms
@@ -50,13 +43,9 @@ namespace QRCodeGenerator.Forms
                 $"ADR:;;{destino.Rua_vcard};{destino.Cidade_vcard};;{destino.Cep_vcard};{destino.Pais_vcard} \n" +
                 $"ORG:{destino.Empresa_vcard} \n" +
                 $"END:VCARD";
-
-            Debug.WriteLine(VcardString);
-
+            
             QRConfig config = uC_QRConfig3.GetConfig();
             string strData = WebUtility.UrlEncode(VcardString);//transforma o conteudo digitado em uma string valida.
-            Debug.WriteLine(strData);
-
             _format = config.Format;
 
             _imgQrcode = new GoQRCode().GetQRCode(strData, config);
@@ -82,6 +71,11 @@ namespace QRCodeGenerator.Forms
         private void Btn_GenerateSave_QRCode_Vcard_03_Click(object sender, EventArgs e)
         {
             SaveImage.Save(_imgQrcode, _format);
+        }
+
+        private void Frm_QRCode_Vcard_Load(object sender, EventArgs e)
+        {
+            Btn_GenerateClean_QRCode_Vcard_02_Click(Btn_GenerateClean_QRCode_Vcard_02, new EventArgs());
         }
     }
 }

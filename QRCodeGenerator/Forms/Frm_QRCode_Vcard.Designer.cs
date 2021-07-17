@@ -157,6 +157,7 @@ namespace QRCodeGenerator.Forms
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "QRCode Vcard - Cartão de Contato";
+            this.Load += new System.EventHandler(this.Frm_QRCode_Vcard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Image_QRCodeURL)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
