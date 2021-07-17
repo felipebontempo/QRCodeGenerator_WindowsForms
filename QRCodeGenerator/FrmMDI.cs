@@ -51,5 +51,10 @@ namespace QRCodeGenerator
         {
             AbrirFormulario(new Frm_QRCode_Call());
         }
+
+        private void Btn_LocalizacaoType_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new Frm_QRCode_Geolocation());
+        }
     }
 }

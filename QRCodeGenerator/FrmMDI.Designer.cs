@@ -127,6 +127,7 @@ namespace QRCodeGenerator
             this.Btn_LocalizacaoType.Size = new System.Drawing.Size(194, 48);
             this.Btn_LocalizacaoType.TabIndex = 5;
             this.Btn_LocalizacaoType.UseVisualStyleBackColor = true;
+            this.Btn_LocalizacaoType.Click += new System.EventHandler(this.Btn_LocalizacaoType_Click);
             // 
             // Btn_CallType
             // 
