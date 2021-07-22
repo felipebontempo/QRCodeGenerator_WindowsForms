@@ -116,6 +116,7 @@ namespace QRCodeGenerator
             this.Btn_CalendarioType.Size = new System.Drawing.Size(194, 48);
             this.Btn_CalendarioType.TabIndex = 6;
             this.Btn_CalendarioType.UseVisualStyleBackColor = true;
+            this.Btn_CalendarioType.Click += new System.EventHandler(this.Btn_CalendarioType_Click);
             // 
             // Btn_LocalizacaoType
             // 

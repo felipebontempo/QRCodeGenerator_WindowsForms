@@ -56,5 +56,10 @@ namespace QRCodeGenerator
         {
             AbrirFormulario(new Frm_QRCode_Geolocation());
         }
+
+        private void Btn_CalendarioType_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new Frm_QRCode_EventCalendar());
+        }
     }
 }
