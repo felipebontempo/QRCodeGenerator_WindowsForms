@@ -105,6 +105,7 @@ namespace QRCodeGenerator
             this.Btn_EmailType.Size = new System.Drawing.Size(194, 48);
             this.Btn_EmailType.TabIndex = 7;
             this.Btn_EmailType.UseVisualStyleBackColor = true;
+            this.Btn_EmailType.Click += new System.EventHandler(this.Btn_EmailType_Click);
             // 
             // Btn_CalendarioType
             // 

@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Frm_EmailCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_EmailCadastro.Designer.cs">
+      <DependentUpon>Frm_EmailCadastro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Frm_EventCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +63,12 @@
     </Compile>
     <Compile Include="Forms\Frm_QRCode_Call.Designer.cs">
       <DependentUpon>Frm_QRCode_Call.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_QRCode_Email.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_QRCode_Email.Designer.cs">
+      <DependentUpon>Frm_QRCode_Email.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Frm_QRCode_EventCalendar.cs">
       <SubType>Form</SubType>
@@ -122,11 +134,17 @@
       <DependentUpon>UC_QRConfig.cs</DependentUpon>
     </Compile>
     <Compile Include="Vcard.cs" />
+    <EmbeddedResource Include="Forms\Frm_EmailCadastro.resx">
+      <DependentUpon>Frm_EmailCadastro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Frm_EventCadastro.resx">
       <DependentUpon>Frm_EventCadastro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Frm_QRCode_Call.resx">
       <DependentUpon>Frm_QRCode_Call.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_QRCode_Email.resx">
+      <DependentUpon>Frm_QRCode_Email.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Frm_QRCode_EventCalendar.resx">
       <DependentUpon>Frm_QRCode_EventCalendar.cs</DependentUpon>

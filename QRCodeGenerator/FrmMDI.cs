@@ -61,5 +61,10 @@ namespace QRCodeGenerator
         {
             AbrirFormulario(new Frm_QRCode_EventCalendar());
         }
+
+        private void Btn_EmailType_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new Frm_QRCode_Email());
+        }
     }
 }
