@@ -106,6 +106,12 @@
     <Compile Include="Forms\Frm_QRCode_Vcard.Designer.cs">
       <DependentUpon>Frm_QRCode_Vcard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Frm_QRCode_Wifi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_QRCode_Wifi.Designer.cs">
+      <DependentUpon>Frm_QRCode_Wifi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Frm_SmsCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,12 @@
     </Compile>
     <Compile Include="Forms\Frm_VcardCadastro.Designer.cs">
       <DependentUpon>Frm_VcardCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_WifiCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_WifiCadastro.Designer.cs">
+      <DependentUpon>Frm_WifiCadastro.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmMDI.cs">
       <SubType>Form</SubType>
@@ -164,11 +176,17 @@
     <EmbeddedResource Include="Forms\Frm_QRCode_Vcard.resx">
       <DependentUpon>Frm_QRCode_Vcard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_QRCode_Wifi.resx">
+      <DependentUpon>Frm_QRCode_Wifi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Frm_SmsCadastro.resx">
       <DependentUpon>Frm_SmsCadastro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Frm_VcardCadastro.resx">
       <DependentUpon>Frm_VcardCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_WifiCadastro.resx">
+      <DependentUpon>Frm_WifiCadastro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMDI.resx">
       <DependentUpon>FrmMDI.cs</DependentUpon>

@@ -94,6 +94,7 @@ namespace QRCodeGenerator
             this.Btn_WifiType.Size = new System.Drawing.Size(194, 56);
             this.Btn_WifiType.TabIndex = 8;
             this.Btn_WifiType.UseVisualStyleBackColor = true;
+            this.Btn_WifiType.Click += new System.EventHandler(this.Btn_WifiType_Click);
             // 
             // Btn_EmailType
             // 
