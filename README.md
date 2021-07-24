@@ -4,7 +4,7 @@ Simples aplicação feita com a linguagem **Csharp** e **Windows Forms**.
 
 A aplicação basicamente consiste em 9 botões principais no qual você pode escolher um tipo de QR CODE que deseja gerar.
 
-![qrcodegerador_print](C:\Users\Felipe\source\repos\QRCodeGenerator_principal\qrcodegerador_print.png)
+![qrcodegerador_print](https://user-images.githubusercontent.com/26803292/126875696-3de3f5a8-0316-4c92-a132-78db96804e3c.png)
 
 ## Tipos de QR Code disponíveis
 
